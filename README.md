@@ -24,11 +24,11 @@ Still to be added..
 * Add default variable to show other system label information
 * other fixes/updates
 
-# Imstallation / Usage
+# Installation / Usage
 
 This installation assumes you are running the latest version of Vera software.
 
-1. Upload the icon documents.png file to the appropriate storage location on your controller. For Vera that's `/www/cmh/skins/default/icons`
+1. You have the option with this release to use the `D_paperless1_URL.json` file to pull the icons directly from the web, or if you prefer to have everything local, the you can use the standard .json and upload the error.png and documents.png files to the appropriate storage location on your controller. For Vera that's `/www/cmh/skins/default/icons`
 2. Upload the .xml and .json file in the repository to the appropriate storage location on your controller. For Vera that's via Apps/Develop Apps/Luup files/
 3. Create the decice instance via the appropriate route. For Vera that's Apps/Develop Apps/Create Device/ and putting "D_xxxxxxxxx.xml" into the Upnp Device Filename box. 
 4. Reload luup to establish the device and then reload luup again (just to be sure) and you should be good to go.
