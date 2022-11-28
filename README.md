@@ -1,10 +1,8 @@
-# Luup-Paperless-ngx
-
 # Paperless-ngx-Sensor
 
 # Scope
 
-This is a Luup plugin to keep an eye on your Paperless-ngx instance
+This is a Luup plugin to keep an eye on your Paperless-ngx instance - https://github.com/paperless-ngx/paperless-ngx
 
 Luup (Lua-UPnP) is a software engine which incorporates Lua, a popular scripting language, and UPnP, the industry standard way to control devices. Luup is the basis of a number of home automation controllers e.g. Micasaverde Vera, Vera Home Control, OpenLuup.
 
@@ -66,11 +64,12 @@ If you choose to use/customise or just like this plug-in, feel free to say thank
 
 Once installed, you should see the device listed with your display label
 
-![D858216C-7C05-428A-8D6A-4F2D686D01FC](https://user-images.githubusercontent.com/4349292/153750124-7a404868-59d9-4228-b058-47889f0ba491.jpeg)
+![0B09F54D-8C1C-4CFD-9C16-65CC0FFD1A27](https://user-images.githubusercontent.com/4349292/204249001-01f6e506-4019-4ced-b200-5a185741dc82.jpeg)
+
 
 # License
 
-Copyright © 2021 Chris Parker (nodecentral)
+Copyright © 2022 Chris Parker (nodecentral)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
