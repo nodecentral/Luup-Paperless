@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- 
+	I_Paperless1.xml; Vera/openLuup "Paperless" Plug-in 
+	Dec 2022
+-->
+<implementation>
+<functions>
+		function initialisePaperlessPlugin(lul_device)
+			luup.log("PAPER: Paperless Plugin STARTING-UP!")
+			Paperless = require("L_Paperless1")
+			return Paperless.PaperlessStartup(lul_device)
+			end
+
+</functions> 
+    <startup>initialisePaperlessPlugin</startup>
+    <actionList>
+        <action>
+            <serviceId>urn:nodecentral-net:serviceId:Paperless1</serviceId>
+            <name>SendPaperlessNotification</name>
+            <run>
+                Paperless.sendPush(lul_device, lul_settings.Event or "nil", lul_settings.Description or "nil" )
+            </run>
+        </action>
+    </actionList>
+</implementation>

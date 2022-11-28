@@ -1,0 +1,289 @@
+{
+   "default_icon":"../../../icons/documents.png",
+   "state_icons":[
+      {
+         "img":"..\/..\/..\/icons\/documents.png",
+         "conditions":[
+            {
+               "service":"urn:nodecentral-net:serviceId:Paperless1",
+               "variable":"Icon",
+               "operator":"==",
+               "value":1
+            }
+         ]
+      },   
+      {
+         "img":"..\/..\/..\/icons\/error.png",
+         "conditions":[
+            {
+               "service":"urn:nodecentral-net:serviceId:Paperless1",
+               "variable":"Icon",
+               "operator":"==",
+               "value":0
+            }
+         ]
+      }
+   ],
+   "x":"2",
+   "y":"4",
+   "inScene":"1",
+   "DisplayStatus":{
+      "Service":"urn:nodecentral-net:serviceId:Paperless1",
+      "Variable":"Status",
+      "MinValue":"0",
+      "MaxValue":"1"
+   },
+   "ToggleButton":1,
+   "Tabs":[
+      {
+         "Label":{
+            "lang_tag":"tabname_control",
+            "text":"Paperless"
+         },
+         "Position":"0",
+         "TabType":"flash",
+         "ControlGroup":[
+            {
+               "id":"1",
+               "isSingle":"1",
+               "scenegroup":"1"
+            }
+         ],
+         "SceneGroup":[
+            {
+               "id":"1",
+               "top":"2",
+               "left":"0",
+               "x":"2",
+               "y":"1"
+            }
+         ],
+         "Control":[
+
+			{
+				"ControlGroup":"2",
+                "ControlType":"label",
+                "text_align":"left",
+                "Label":{
+                "lang_tag":"vname",
+                "text":"Document Count :"
+            },
+            "Display": {
+                "Top": 20,
+                "Left": 50,
+                "Width": 75,
+                "Height": 20
+            }
+			},
+			{
+				"ControlGroup":"2",
+				"ControlType": "variable",
+				"ControlCode": "my_variable2",
+				"top": "0",
+				"left": "0",
+			"Display": {
+                "Service": "urn:nodecentral-net:serviceId:Paperless1",
+                "Variable": "DocumentCount",
+                "Top": 20,
+                "Left": 220,
+                "Width": 75,
+                "Height": 20
+            }
+			},
+			{
+				"ControlGroup":"2",
+				"ControlType": "variable",
+				"ControlCode": "my_variable2",
+				"top": "0",
+				"left": "0",
+			"Display": {
+                "Service": "urn:nodecentral-net:serviceId:Paperless1",
+                "Variable": "LastDocCountTaken",
+                "Top": 20,
+                "Left": 390,
+                "Width": 75,
+                "Height": 20
+            }
+			},
+            {
+               "ControlGroup":"2",
+               "ControlType":"label",
+               "text_align":"left",
+               "Label":{
+                  "lang_tag":"vname",
+                  "text":"Last Document Added :"
+            },
+               "Display":{
+                  "Top":120,
+                  "Left":50,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+            {
+               "ControlGroup":"1",
+               "ControlType":"variable",
+               "text_align":"left",
+               "Display":{
+                  "Service":"urn:nodecentral-net:serviceId:Paperless1",
+                  "Variable":"LastDocumentAdded",
+                  "Top":120,
+                  "Left":220,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+            {
+               "ControlGroup":"3",
+               "ControlType":"label",
+               "text_align":"left",
+               "Label":{
+                  "lang_tag":"vname",
+                  "text":"Tag Count :"
+               },
+               "Display":{
+                  "Top":40,
+                  "Left":50,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+            {
+               "ControlGroup":"3",
+               "ControlType":"variable",
+               "text_align":"left",
+               "Display":{
+                  "Service":"urn:nodecentral-net:serviceId:Paperless1",
+                  "Variable":"TagCount",
+                  "Top":40,
+                  "Left":220,
+                  "Width":75,
+                  "Height":20
+            }
+            },
+			{
+				"ControlGroup":"3",
+				"ControlType": "variable",
+				"ControlCode": "my_variable2",
+				"top": "0",
+				"left": "0",
+			"Display": {
+                "Service": "urn:nodecentral-net:serviceId:Paperless1",
+                "Variable": "LastTagCountTaken",
+                "Top": 40,
+                "Left": 390,
+                "Width": 75,
+                "Height": 20
+            }
+			},
+            {
+               "ControlGroup":"4",
+               "ControlType":"label",
+               "text_align":"left",
+               "Label":{
+                  "lang_tag":"vname",
+                  "text":"Correspondent Count :"
+               },
+               "Display":{
+                  "Top":60,
+                  "Left":50,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+            {
+               "ControlGroup":"4",
+               "ControlType":"variable",
+               "text_align":"left",
+               "Display":{
+                  "Service":"urn:nodecentral-net:serviceId:Paperless1",
+                  "Variable":"CorrespondentCount",
+                  "Top":60,
+                  "Left":220,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+			{
+				"ControlGroup":"3",
+				"ControlType": "variable",
+				"ControlCode": "my_variable2",
+				"top": "0",
+				"left": "0",
+			"Display": {
+                "Service": "urn:nodecentral-net:serviceId:Paperless1",
+                "Variable": "LastCorresCountTaken",
+                "Top": 60,
+                "Left": 390,
+                "Width": 75,
+                "Height": 20
+            }
+			},
+			{
+               "ControlGroup":"4",
+               "ControlType":"label",
+               "text_align":"left",
+               "Label":{
+                  "lang_tag":"vname",
+                  "text":"Document Type Count :"
+               },
+               "Display":{
+                  "Top":80,
+                  "Left":50,
+                  "Width":75,
+                  "Height":20
+               }
+            },
+            {
+               "ControlGroup":"4",
+               "ControlType":"variable",
+               "text_align":"left",
+               "Display":{
+                  "Service":"urn:nodecentral-net:serviceId:Paperless1",
+                  "Variable":"DocumentTypeCount",
+                  "Top":80,
+                  "Left":220,
+                  "Width":75,
+                  "Height":20
+             }
+			 },
+			 {
+				"ControlGroup":"3",
+				"ControlType": "variable",
+				"ControlCode": "my_variable2",
+				"top": "0",
+				"left": "0",
+			"Display": {
+                "Service": "urn:nodecentral-net:serviceId:Paperless1",
+                "Variable": "LastTypeCountTaken",
+                "Top": 80,
+                "Left": 390,
+                "Width": 75,
+                "Height": 20
+            }
+		    }
+         ]
+      },
+      {
+         "Label":{
+            "lang_tag":"advanced",
+            "text":"Advanced"
+         },
+         "Position":"2",
+         "TabType":"javascript",
+         "ScriptName":"shared.js",
+         "Function":"advanced_device"
+      },
+      {
+         "Label":{
+            "lang_tag":"notifications",
+            "text":"Notifications"
+         },
+         "Position":"3",
+         "TabType":"javascript",
+         "ScriptName":"shared.js",
+         "Function":"device_notifications"
+      }
+   ],
+	"DeviceType": "urn:schemas-nodecentral-net:device:Paperless:1"
+   }
