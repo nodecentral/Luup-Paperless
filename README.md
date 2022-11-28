@@ -66,6 +66,9 @@ Once installed, you should see the device listed with your display label
 
 ![0B09F54D-8C1C-4CFD-9C16-65CC0FFD1A27](https://user-images.githubusercontent.com/4349292/204249001-01f6e506-4019-4ced-b200-5a185741dc82.jpeg)
 
+and when you access the tile, you will see details about your Paperless instance
+
+![60D60A6B-6A66-457F-89F6-94602CFED04F](https://user-images.githubusercontent.com/4349292/204249566-2fe80185-596f-4aee-96c5-30fc102c9430.jpeg)
 
 # License
 
